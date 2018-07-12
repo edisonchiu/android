@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+            android:background="@drawable/my_button"
+        -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp" />
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="#000"
+        android:textSize="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/imageDialog"/>
+
+
+    <!-- Button Layout -->
+    <LinearLayout
+        android:id="@+id/layoutYesNo"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textDialog">
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:minWidth="200dp"
+            android:text="是"
+            android:textSize="50dp"
+            android:textColor="#000"
+            android:layout_below="@+id/textDialog"
+            android:layout_alignParentLeft="true" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:minWidth="200dp"
+            android:text="否"
+            android:textSize="50dp"
+            android:textColor="#000"
+
+            android:layout_alignTop="@+id/positiveButton"
+            android:layout_alignParentRight="true" />
+
+    </LinearLayout>
+    <!-- Button Layout -->
+
+
+    <!-- Text Layout 2 -->
+    <TextView
+        android:id="@+id/textDialogDial"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="撥號？"
+        android:textColor="#000"
+        android:textSize="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/layoutYesNo"/>
+    <!-- Text Layout 2 -->
+
+    <!-- Button Layout 2-->
+    <LinearLayout
+        android:id="@+id/layoutDialYesNo"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textDialogDial">
+
+        <Button
+            android:id="@+id/buttonDialOk"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:minWidth="200dp"
+            android:text="撥號"
+            android:textSize="50dp"
+            android:textColor="#000"
+            android:layout_below="@+id/textDialog"
+            android:layout_alignParentLeft="true" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/buttonDialCancel"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="50dp"
+            android:textColor="#FFF"
+            android:background="#FFF"
+            android:layout_alignTop="@+id/buttonDialOk"
+            android:layout_alignParentRight="true" />
+
+    </LinearLayout>
+    <!-- Button Layout 2 -->
+
+</RelativeLayout>

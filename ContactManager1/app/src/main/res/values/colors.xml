@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titlebackgroundcolor">#3232CD</color>
+    <color name="titletextcolor">#FFFF00</color>
+    <color name="dialog_titletextcolor">#000000</color>
+    <color name="list_divider_color">#aaa</color>
+
+    <color name="button_color">#aaa</color>
+    <color name="button_state_pressed_color">#0aa</color>
+    <color name="button_state_focused_color">#0aa</color>
+
+    <color name="color_dark_green">#00a</color>
+    <color name="color_dark_blue">#0a0</color>
+    <color name="color_dark_red">#a00</color>
+    <color name="color_gray_60">#606060</color>
+</resources>

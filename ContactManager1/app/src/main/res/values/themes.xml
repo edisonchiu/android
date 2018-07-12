@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+            <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:textColor">#FFFFFF</item>
+        -->
+
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- Any customizations for your app running on devices with Theme.Holo here -->
+        <item name="android:textSize">50sp</item>
+        <item name="android:actionBarSize">80sp</item>
+
+        <!-- remove title icon -->
+        <item name="android:logo">@android:color/transparent</item>
+
+        <item name="android:actionBarTabTextStyle">@style/Widget.MyTabText</item>
+    </style>
+
+
+    <!--
+                    Widget.MyTabText  -  Override Action Bar Text Style
+                            see:    themes_holo.xml
+                                <item name="actionBarTabTextStyle">@style/Widget.Holo.Light.ActionBar.TabText</item>
+        -->
+    <style name="Widget.MyTabText" parent="@android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>

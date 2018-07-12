@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+    android:textColor="@android:color/darker_gray"  // for Light Theme
+     android:textColor="@android:color/white"
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <!-- 1st column - Name -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <!-- TextView Name  -->
+                <TextView android:text="@+id/contactEntryText"
+                    style="@android:style/Theme.Holo.Light"
+                    android:id="@+id/tvEntryTextNumber"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="50dp"
+                    android:layout_gravity="bottom" />
+
+                <TextView
+                    android:id="@+id/contactEntryStatus"
+                    android:gravity="right"
+                    android:layout_weight="2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#FF000000"
+                    android:textSize="24dp"
+                    android:layout_gravity="bottom" />
+
+                    <!-- TextView Call Duration  -->
+                    <TextView
+                        android:gravity="right"
+                        android:id="@+id/contactEntryText3"
+                        android:layout_weight="2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_gray_60"
+                        android:textSize="24dp"/>
+
+            </LinearLayout>
+
+
+            <!-- 2st column - TEL Number  -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <!-- TextView TEL Number  -->
+                <TextView android:text="0900123456"
+                    android:id="@+id/tvEntryTextContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_gray_60"
+                    android:textSize="36dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
